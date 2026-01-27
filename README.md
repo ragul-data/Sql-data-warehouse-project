@@ -18,6 +18,7 @@ It follows **real-world data engineering practices**, including ETL/ELT, data mo
 
 ## 🧱 Data Architecture Overview
 
+<img width="1008" height="571" alt="image" src="https://github.com/user-attachments/assets/949cc828-b8d8-4c42-b64d-3f1c0fbb6484" />
 
 ### 🔹 Bronze Layer
 - Raw data ingestion
