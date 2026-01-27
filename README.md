@@ -148,7 +148,7 @@ These insights empower stakeholders with key business metrics, enabling strategi
 
 
 ## 📂 Repository Structure
-
+```text
 data-warehouse-project/
 │
 ├── datasets/                           # Raw datasets used for the project (ERP and CRM data)
