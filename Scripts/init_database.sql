@@ -13,7 +13,15 @@ WARNING:
     and ensure you have proper backups before running this script.
 */
 
-USE master;
+
+Database: DataWare_House_ETL
+   ├── Schema: bronze   → raw tables
+   ├── Schema: silver   → cleaned tables
+   └── Schema: gold     → reporting tables
+	Thise is the structure of the database
+"----------------------------------------------------------------------------------------"
+	
+USE DataWare_House_ETL;
 GO
 
 -- Drop and recreate the 'DataWarehouse' database
