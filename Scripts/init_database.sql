@@ -3,12 +3,12 @@
 Create Database and Schemas
 =============================================================
 Script Purpose:
-    This script creates a new database named 'DataWarehouse' after checking if it already exists. 
+    This script creates a new database named 'DataWare_House_ETL' after checking if it already exists. 
     If the database exists, it is dropped and recreated. Additionally, the script sets up three schemas 
     within the database: 'bronze', 'silver', and 'gold'.
 	
 WARNING:
-    Running this script will drop the entire 'DataWarehouse' database if it exists. 
+    Running this script will drop the entire 'DataWare_House_ETL' database if it exists. 
     All data in the database will be permanently deleted. Proceed with caution 
     and ensure you have proper backups before running this script.
 */
@@ -24,19 +24,19 @@ Database: DataWare_House_ETL
 USE DataWare_House_ETL;
 GO
 
--- Drop and recreate the 'DataWarehouse' database
-IF EXISTS (SELECT 1 FROM sys.databases WHERE name = 'DataWarehouse')
+-- Drop and recreate the 'DataWare_House_ETL' database
+IF EXISTS (SELECT 1 FROM sys.databases WHERE name = 'DataWare_House_ETL')
 BEGIN
-    ALTER DATABASE DataWarehouse SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
-    DROP DATABASE DataWarehouse;
+    ALTER DATABASE DataWare_House_ETL SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
+    DROP DATABASE DataWare_House_ETL;
 END;
 GO
 
 -- Create the 'DataWarehouse' database
-CREATE DATABASE DataWarehouse;
+CREATE DATABASE DataWare_House_ETL;
 GO
 
-USE DataWarehouse;
+USE DataWare_House_ETL;
 GO
 
 -- Create Schemas
